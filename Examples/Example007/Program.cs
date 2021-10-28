@@ -32,7 +32,6 @@ for(int j=0; j<10; ++j)
 // Вывод массива в консоль
 for(i=0;i<10;++i)
 {
-    Console.Write(a[i]);
-    Console.Write(" ");
+    Console.Write(a[i]+" ");
 }
 Console.WriteLine("  Done!");
