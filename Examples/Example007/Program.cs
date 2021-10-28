@@ -14,12 +14,21 @@ for(int j=0; j<10; ++j)
     a[j]=0;
 }
 // Ввод массива с клавиатуры
+/*
 for(int j=0; j<10; ++j)
 {
     string s=Console.ReadLine();
     a[j]=Convert.ToInt32(s);
 }
+*/
 
+// Заполнение массива случайными числами
+for(int j=0; j<10; ++j)
+{
+    Random rnd;
+    rnd=new Random();
+    a[j]=rnd.Next(0,101);
+}
 // Вывод массива в консоль
 for(i=0;i<10;++i)
 {
