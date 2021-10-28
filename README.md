@@ -11,5 +11,5 @@
 
 ## Example006 - Max of three numbers
 
-## Example007 - Arrays
+## Example007 - Arrays & Random
 
