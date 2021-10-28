@@ -13,9 +13,17 @@ for(int j=0; j<10; ++j)
 {
     a[j]=0;
 }
+// Ввод массива с клавиатуры
+for(int j=0; j<10; ++j)
+{
+    string s=Console.ReadLine();
+    a[j]=Convert.ToInt32(s);
+}
+
 // Вывод массива в консоль
 for(i=0;i<10;++i)
 {
     Console.Write(a[i]);
+    Console.Write(" ");
 }
 Console.WriteLine("  Done!");
