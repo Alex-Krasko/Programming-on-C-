@@ -45,7 +45,7 @@ int c = 0;
     return c;
 }
 
-int[] createArrayB(int[] arrayB) //Создание массива B на основе массива А с перебором по-возрастанию
+int[] createArrayB(int[] arrayB) //Создание массива B на основе массива А
 {
     int len = (arrayA.Length)-1;
     int index = 0;
@@ -56,21 +56,15 @@ int[] createArrayB(int[] arrayB) //Создание массива B на осн
         if(arrayA[index]%2==0) {} // Четные отбрасываем по ТЗ
         else
             {
-                if(arrayA[index]>Avr(arrayA)) 
-                    {
-                        
-                    }
+                if(arrayA[index]>Avr(arrayA)) {} // Если элемент больше среднего арифметического массива А
+                                                 // то он отбрасывается
                 else 
                     {
                         if(arrayA[index]>currentElement)
                             {
                                 currentElement = arrayA[index];
-                                if(arrayA[index]> Avr(arrayA)) {}
-                                else 
-                                    {
-                                        arrayB[index2] = currentElement;
-                                        index2++;
-                                    }
+                                arrayB[index2] = currentElement;
+                                index2++;
                             }
 
                     }
