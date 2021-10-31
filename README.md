@@ -13,3 +13,4 @@
 
 ## Example007 - Arrays & Random
 
+## Example008 - Задача с массивами
