@@ -85,7 +85,7 @@ int[] createArrayB(int[] arrayB) //Создание массива B на осн
 FillArray(arrayA); // Заполнение массива случайными числами от 10 до 99.
 Console.Write("ArrayA: ");
 PrintArray(arrayA); // Выведение массива A в консоль.
-Console.WriteLine("Average: "+Avr(arrayA)); // Вывод в консоль среднеарифметического значения массива А.
+Console.WriteLine("Average: "+Avr(arrayA)); // Вывод в консоль среднего арифметического массива А.
 arrayB = createArrayB(arrayB); // Заполнение массива в соответствии с ТЗ.
 if(arrayB[0]==0) //Если массив начинается с 0, значит он пуст и отбрасывается.
 {
