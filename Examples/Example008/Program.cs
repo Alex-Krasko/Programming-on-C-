@@ -53,7 +53,7 @@ int[] createArrayB(int[] arrayB) //Создание массива B на осн
     int currentElement = 0;
     while (index <= len)
     {
-        if(arrayA[index]%2!=0) {} // Нечетные отбрасываем по ТЗ
+        if(arrayA[index]%2==0) {} // Четные отбрасываем по ТЗ
         else
             {
                 if(arrayA[index]>Avr(arrayA)) 
