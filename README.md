@@ -17,4 +17,4 @@
 
 ## [Example009](https://github.com/Alex-Krasko/Programming-on-C-/tree/main/Examples/Example009) - Изменение символов в заданном тексте
 
-## [Example010](https://github.com/Alex-Krasko/Programming-on-C-/tree/main/Examples/Example009) - Задача с массивами dev2
+## [Example010](https://github.com/Alex-Krasko/Programming-on-C-/tree/main/Examples/Example010) - Задача с массивами dev2
