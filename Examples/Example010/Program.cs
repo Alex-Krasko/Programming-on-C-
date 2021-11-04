@@ -1,10 +1,9 @@
-﻿int minValue = new Random().Next(-90, -10);
-int maxValue = new Random().Next(10, 90);
+﻿int minValue = new Random().Next(-90, 0);
+int maxValue = new Random().Next(0, 90);
 
 Console.WriteLine("minValue: "+minValue);
 Console.WriteLine("maxValue: "+maxValue);
 int[] arrayA = new int[20];
-int[] arrayB = new int[20];
 
 void PrintArray(int[] col)
 {
@@ -12,10 +11,7 @@ void PrintArray(int[] col)
     int position = 0;
     while (position < count)
     {
-            if(col[position]!=0)
-        {
             Console.Write(col[position] +" ");
-        }
             position++;
     }  
 }
@@ -31,12 +27,25 @@ Console.Write("ArrayA: ");
 PrintArray(arrayA);
 Console.WriteLine();
 
-int[] createArrayB(int[] arrayB) //Создание массива B на основе массива А с отбрасыванием чисел, нарушающих порядок возрастания
+int[] createArrayB() //Создание массива B на основе массива А с отбрасыванием чисел, нарушающих порядок возрастания
 {
     int len = (arrayA.Length)-1;
     int index = 0;
     int index2 = 0;
+    int s = 0;
     int currentElement = minValue;
+    while (index <= len) 
+    {
+        if(arrayA[index] > currentElement)
+            {
+                currentElement = arrayA[index];
+                s++;
+            }
+        index++;
+    }
+    int[] arrayB = new int[s];
+    index = 0;
+    currentElement = minValue;
     while (index <= len)
     {
         if(arrayA[index] > currentElement)
@@ -50,6 +59,7 @@ int[] createArrayB(int[] arrayB) //Создание массива B на осн
     return arrayB;
 }
 
-arrayB = createArrayB(arrayB);
+int[] arrayB = createArrayB();
+
 Console.Write("ArrayB: ");
 PrintArray(arrayB);
