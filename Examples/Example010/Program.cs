@@ -3,8 +3,8 @@ int maxValue = new Random().Next(10, 90);
 
 Console.WriteLine("minValue: "+minValue);
 Console.WriteLine("maxValue: "+maxValue);
-int[] arrayA = new int[10];
-int[] arrayB = new int[10];
+int[] arrayA = new int[20];
+int[] arrayB = new int[20];
 
 void PrintArray(int[] col)
 {
@@ -21,7 +21,7 @@ void PrintArray(int[] col)
 }
 
 
-for(int j=0; j<10; ++j)   // Заполнение массива случайными числами
+for(int j=0; j<arrayA.Length; ++j)   // Заполнение массива случайными числами
 {
     Random rnd;
     rnd=new Random();
